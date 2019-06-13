@@ -1,0 +1,15 @@
+# KEYSTONE
+DATE %{YEAR}[/-]%{MONTHNUM}[/-]%{MONTHDAY}
+INFOS \[%{DATA:requi} %{DATA:user} %{DATA:project} %{DATA:teste}\]+
+WARN %{WORD:type_warn}: %{GREEDYDATA:message_warn}
+
+# SWIFT
+DATE_SWIFT %{MONTHDAY}[/-]%{MONTH}[/-]%{YEAR}[/-]%{HOUR}[/-]%{MINUTE}[/-]%{SECOND}
+PROTOCOL %{WORD:protocol}[/]%{NUMBER:version}
+USER_AGENT %{WORD}%{URIPATHPARAM}
+AUTH_TOKEN [A-z0-9.-]+
+TRANSACTION_ID [A-z0-9-]+
+KEY [a-zA-Z0-9._-]+[:]
+TRASH_INIT [%][20]{2}
+TRASH_END [%][0A]{2}
+HEADER %{GREEDYDATA}X-Role[:]%{TRASH_INIT}%{DATA:X_Role}%{TRASH_END}%{GREEDYDATA}X-User-Id[:]%{TRASH_INIT}%{DATA:X_User_Id}%{TRASH_END}%{GREEDYDATA}X-User[:]%{TRASH_INIT}%{DATA:X_User}%{TRASH_END}%{GREEDYDATA}X-Project-Name[:]%{TRASH_INIT}%{DATA:X_Project_Name}%{TRASH_END}X-Project-Id[:]%{TRASH_INIT}%{DATA:X_Project_Id}%{TRASH_END}%{GREEDYDATA}

@@ -9,4 +9,5 @@ Para saber como utilizá-los, basta ler [esta publicação no Medium](https://me
 ---
 
 Autor: Pedro Emerick
+
 Email: <p.emerick@live.com>

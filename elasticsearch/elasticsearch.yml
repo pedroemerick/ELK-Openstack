@@ -2,7 +2,8 @@
 # Author: Pedro Emerick
 # Email: p.emerick@live.com
 # Date: 06/26/2019
-# Versão: 1.0
+# Version: 1.0
+# Project: https://github.com/pedroemerick/ELK-Openstack
 #========================================================
 
 cluster.name: "docker-cluster"

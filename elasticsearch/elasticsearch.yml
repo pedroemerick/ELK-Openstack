@@ -1,2 +1,9 @@
+#========================================================
+# Author: Pedro Emerick
+# Email: p.emerick@live.com
+# Date: 06/26/2019
+# Versão: 1.0
+#========================================================
+
 cluster.name: "docker-cluster"
 network.host: 0.0.0.0

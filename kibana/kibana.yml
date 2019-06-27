@@ -1,3 +1,11 @@
+#========================================================
+# Author: Pedro Emerick
+# Email: p.emerick@live.com
+# Date: 06/26/2019
+# Version: 1.0
+# Project: https://github.com/pedroemerick/ELK-Openstack
+#========================================================
+
 server.name: kibana
 server.host: "0"
 elasticsearch.hosts: [ "http://10.7.52.36:9200" ]
